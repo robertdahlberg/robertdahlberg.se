@@ -1,7 +1,25 @@
-baseURL = "http://robertdahlberg.se/"
-languageCode = "se-SE"
-title = "My New Hugo Site"
+baseURL = "https://robertdahlberg.se/"
+HUGO_VERSION = "0.36.1"
+languageCode = "sv_SE"
+DefaultContentLanguage = "se"
 theme = "penny"
+contentdir = "content" 
+staticDir = "static"
+layoutdir = "layouts" 
+publishdir = "public" 
+canonifyurls = true 
+MetaDataFormat = "toml"
+googleAnalytics = "5OjWr052AqF2kjXoPxv9003ic9dXFg6bBnabUPjgsro"
+
+[blackfriday]
+  angledQuotes = true
+  fractions = false
+  plainIDAnchors = true
+  extensions = ["hardLineBreak"]
+    
+# [permalinks]
+# 	page = "/:title/"
+# 	about = "/:filename/"
 
 [params]
     fontbody = "Roboto"
@@ -19,3 +37,18 @@ theme = "penny"
     highlightJS = true
     copyright = true
     credit = true
+
+[languages]
+[languages.se]
+baseURL = "https://robertdahlberg.se"
+languageName = "Svenska"
+weight = 1
+title = "Robert Dahlberg"
+description = "Programmerande ishockeydomare"
+
+[languages.en]
+baseURL = "https://robertdahlberg.se/en"
+languageName = "English"
+weight = 2
+title = "Robert Dahlberg"
+description = "Developer and Hockey referee" 
