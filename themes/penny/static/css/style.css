@@ -1,11 +1,11 @@
 body {
+    height: 100vh;
     font-family: 'Encode Sans Condensed', sans-serif!important;
     letter-spacing: 1px;
 }
 
 #presentation-img {
-    max-width: 200px;
-    max-height: 200px;
+    max-height: 250px;
     margin-left: auto;
     margin-right: auto;
     display: block;
