@@ -1,3 +1,4 @@
 baseURL = "http://robertdahlberg.se/"
 languageCode = "se-SE"
 title = "My New Hugo Site"
+theme = "penny"
