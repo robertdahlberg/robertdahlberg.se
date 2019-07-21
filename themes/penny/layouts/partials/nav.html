@@ -1,0 +1,57 @@
+<div class="container-fluid" style="background-color:#f8f9fa!important;">
+        <div class="container" style="background-color:#f8f9fa!important;">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="/">
+              <img id="brand" src="{{ .Site.Params.logoSmall}}" alt="{{ .Site.Title }}" />Robert Dahlberg</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+              aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+      
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                {{ range .Site.Pages }} {{ if eq .Type "nav" }}
+                <li class="nav-item">
+                  <a class="nav-link" href="{{ .Permalink }}">{{ .Title }}</a>
+                </li>
+                {{ end }} {{ end }}
+                <li class="nav-item">
+                  <a class="nav-link" href="/post/">Posts</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/code/">Code</a>
+                </li>
+              </ul>
+              <span class="navbar-text">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item icon">
+                      <a href="https://www.facebook.com/dahlbergrobert" target="_blank">
+                        <i class="fab fa-facebook-square"></i>
+                    </a>
+                  </li>
+                  <li class="nav-item icon">
+                      <a href="https://www.instagram.com/robertdahlberg/" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                  </li>
+                  <li class="nav-item icon">
+                      <a href="https://se.linkedin.com/in/robertdahlberg" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                  </li>
+                  <li class="nav-item icon">
+                      <a href="https://github.com/robertdahlberg" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                  </li>
+                  <li class="nav-item icon">
+                    <a href="https://robertdahlberg.se/en/">
+                      <i class="fas fa-flag-usa"></i>
+                  </a>
+                  </li>
+                </ul>
+              </span>
+            </div>
+          </nav>
+        </div>
+      </div>

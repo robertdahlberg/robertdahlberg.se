@@ -2,3 +2,20 @@ baseURL = "http://robertdahlberg.se/"
 languageCode = "se-SE"
 title = "My New Hugo Site"
 theme = "penny"
+
+[params]
+    fontbody = "Roboto"
+    fontheading = "Roboto"
+    logoBig = "/img/Roundportrait.png"
+    logoSmall = "img/favicon-32x32.png"
+    name = "Robert Dahlberg"
+    favicon = "favicon.ico"
+    opengraphImage = "/img/Roundportrait.png"
+    twitter = "robertdahlberg"
+    linkedin = "robertdahlberg"
+    github = "robertdahlberg"
+    email = "r@robertdahlberg.se"
+    googleTagManger = ""
+    highlightJS = true
+    copyright = true
+    credit = true
