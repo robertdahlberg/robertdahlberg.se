@@ -2,3 +2,7 @@ baseURL = "http://robertdahlberg.se/"
 languageCode = "se-SE"
 title = "My New Hugo Site"
 theme = "penny"
+
+[params]
+Name = "Robert Dahlberg"
+Description = "Programmerande ishockeydomare"

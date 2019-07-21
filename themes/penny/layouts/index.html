@@ -1,6 +1,20 @@
 {{ partial "head.html" . }}
-{{ partial "nav.html" }}
 
-<h1>hello world</h1>
+{{if not .IsHome}}
+{{ partial "nav.html" }}
+{{end}}
+
+<div class="container">
+    <div class="row">
+        <div class="col-3">
+            <img id="presentation-img"
+                src="https://res.cloudinary.com/dfvkxoqhn/image/upload/f_auto,q_auto/v1563718128/Roundportrait_rzhfuk.png">
+        </div>
+        <div class="col">
+            <h1 id="title">{{ .Site.Params.name }}</h1>
+            <p>{{ .Site.Params.description }}</p>
+        </div>
+    </div>
+</div>
 
 {{ partial "footer.html" . }}
