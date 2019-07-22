@@ -1,7 +1,15 @@
 body {
-    height: 100vh;
     font-family: 'Encode Sans Condensed', sans-serif!important;
     letter-spacing: 1px;
+}
+
+img#brand {
+    max-width: 30px;
+    margin-right: 10px;
+}
+
+li.nav-item.icon {
+    margin-right: 10px;
 }
 
 #presentation-img {

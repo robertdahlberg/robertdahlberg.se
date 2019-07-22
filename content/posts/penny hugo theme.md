@@ -1,6 +1,6 @@
 +++
 title = "Penny Hugo Theme"
-img = "/img/hugo.png"
+img = "https://res.cloudinary.com/dfvkxoqhn/image/upload/v1563793074/gohugoio-card_ohug5s.png"
 description = "Se koden ifrån min sida"
 date = "2017-06-10"
 slug = ""

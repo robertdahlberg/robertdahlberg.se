@@ -1,9 +1,14 @@
 baseURL = "http://robertdahlberg.se/"
 languageCode = "se-SE"
-title = "My New Hugo Site"
+title = "Robert Dahlberg, programmerande ishockeydomare"
 theme = "penny"
 
 [params]
 Picture = "https://res.cloudinary.com/dfvkxoqhn/image/upload/f_auto,q_auto/v1563718128/Roundportrait_rzhfuk.png"
+LogoSmall = "https://res.cloudinary.com/dfvkxoqhn/image/upload/c_scale,f_auto,q_auto,w_100/v1563718128/Roundportrait_rzhfuk.png"
 Name = "Robert Dahlberg"
 Description = "Programmerande ishockeydomare"
+Facebook = "https://www.facebook.com/dahlbergrobert"
+Instagram = "https://www.instagram.com/robertdahlberg/"
+LinkedIn = "https://se.linkedin.com/in/robertdahlberg"
+Github = "https://github.com/robertdahlberg"

@@ -8,7 +8,7 @@ type = "nav"
 
 <div class="row">
 <div class="col-sm">
-Jag heter Robert Dahlberg, är 27 år gammal och arbetar just nu som full-stack webdeveloper hos Studentmedia.
+Jag heter Robert Dahlberg, är <p id="p1" style="display: contents;"></p> år gammal och arbetar just nu som full-stack webdeveloper hos Studentmedia.
 Här har jag huvudansvaret över nyutvecklingen, vidareutvecklingen och andra tekniska frågor. Språken som jag sitter med just idag är .Net C#, SQL, olika javascript, Angular, Node, mongoDB och hugo. 
 <p></p>                  
 Under min utbildning har jag fått utmärkta programmeringskunskaper inom C#, .Net och webbutveckling.
@@ -43,3 +43,13 @@ Med vänlig hälsning
 Robert Dahlberg
 </div>
 </div>
+
+<script>
+    function calculate_age(dob) { 
+    var diff_ms = Date.now() - dob.getTime();
+    var age_dt = new Date(diff_ms); 
+  
+    return Math.abs(age_dt.getUTCFullYear() - 1970);
+}
+document.getElementById("p1").innerHTML = calculate_age(new Date(1991, 8, 21));
+</script>

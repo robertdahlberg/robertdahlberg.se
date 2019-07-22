@@ -1,8 +1,6 @@
 {{ partial "head.html" . }}
 
-{{if not .IsHome}}
-{{ partial "nav.html" }}
-{{end}}
+{{ partial "nav.html" . }}
 
 <div class="container h-100">
     <div class="row align-items-center h-100">
@@ -12,14 +10,6 @@
                 <hr>
                 <h1 id="title" style="text-align:center;">{{ .Site.Params.name }}</h1>
                 <p id="description" style="text-align:center;">{{ .Site.Params.description }}</p>
-                <ul id="front-list">
-                    {{ range .Data.Pages }} {{ if eq .Type "nav" }}
-                    <li>
-                        <a href="{{ .Permalink }}">{{ .Title }}</a>
-                    </li>
-                    {{ end }}
-                    {{ end }}
-                </ul> Code
             </div>
         </div>
     </div>
