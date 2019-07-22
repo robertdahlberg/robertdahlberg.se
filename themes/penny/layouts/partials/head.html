@@ -21,12 +21,10 @@
     <meta name="reply-to" content="{{ .Site.Params.Email }}">
 
     <!-- OpenGraph -->
-    <meta name="og:title" content="{{ .Site.Params.Title }}" />
-    <meta name="og:type" content="movie" />
-    <meta name="og:url" content="https://robertdahlberg.se/" />
-    <meta name="og:image" content="{{ .Site.Params.Picture }}" />
-    <meta name="og:site_name" content="{{ .Site.Params.Title }}" />
-    <meta name="og:description" content="{{ .Site.Params.Description }}" />
+    <meta property="og:title" content="{{ .Site.Params.Title }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://robertdahlberg.se/" />
+    <meta property="og:image" content="{{ .Site.Params.Picture }}" />
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
