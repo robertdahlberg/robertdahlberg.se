@@ -6,17 +6,22 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta charset="utf-8">
 
-    <!-- Robots -->
+    {{ if .IsHome }}
+    <title>{{ .Site.Params.Title }}</title>
     <meta name="title" content="{{ .Site.Params.Title }}">
     <meta name="description" content="{{ .Site.Params.Description }}">
     <meta name='date' content='{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}'>
     <meta name='revised' content='{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}'>
     <meta name="language" content="SE">
-
-    <!-- Humans -->
-    <title>{{ .Site.Params.Title }}</title>
-    <meta name="description" content="Portfolio and code by Robert Dahlberg">
+    {{ else }}
+    <title>{{ .Title }} - {{ .Site.Params.Title }}</title>
+    <meta name="title" content="{{ .Title }} - {{ .Site.Params.Title }}">
+    <meta name="description" content="{{ .Description }}">
     <meta name="author" content="{{ .Site.Params.Name }}">
+    <meta name='date' content='{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}'>
+    <meta name='revised' content='{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}'>
+    <meta name="language" content="SE">
+    {{ end }}
     <meta name="robots" content="index,follow" />
     <meta name="reply-to" content="{{ .Site.Params.Email }}">
 
