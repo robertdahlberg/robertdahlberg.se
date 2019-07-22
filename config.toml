@@ -4,5 +4,6 @@ title = "My New Hugo Site"
 theme = "penny"
 
 [params]
+Picture = "https://res.cloudinary.com/dfvkxoqhn/image/upload/f_auto,q_auto/v1563718128/Roundportrait_rzhfuk.png"
 Name = "Robert Dahlberg"
 Description = "Programmerande ishockeydomare"

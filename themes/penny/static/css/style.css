@@ -10,3 +10,12 @@ body {
     margin-right: auto;
     display: block;
 }
+
+#front-list {
+    display: flex;
+    list-style: none;
+}
+
+#front-list li {
+    margin-right: 10px;
+}
