@@ -7,6 +7,10 @@ a {
     color: black!important;
 }
 
+p {
+    color: #585858!important;
+}
+
 img#brand {
     max-width: 30px;
     margin-right: 10px;
