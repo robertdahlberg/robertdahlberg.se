@@ -11,18 +11,39 @@
     <meta name="description" content="{{ .Site.Params.Description }}">
     <meta name='date' content='{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}'>
     <meta name='revised' content='{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}'>
+    <meta name="language" content="SE">
 
+    <!-- Humans -->
     <title>{{ .Site.Params.Title }}</title>
     <meta name="description" content="Portfolio and code by Robert Dahlberg">
     <meta name="author" content="{{ .Site.Params.Name }}">
-    <meta name="revised" content="Sunday, July 18th, 2010, 5:15 pm" />
     <meta name="robots" content="index,follow" />
+    <meta name="reply-to" content="{{ .Site.Params.Email }}">
+
+    <!-- OpenGraph -->
+    <meta name="og:title" content="{{ .Site.Params.Title }}" />
+    <meta name="og:type" content="movie" />
+    <meta name="og:url" content="https://robertdahlberg.se/" />
+    <meta name="og:image" content="{{ .Site.Params.Picture }}" />
+    <meta name="og:site_name" content="{{ .Site.Params.Title }}" />
+    <meta name="og:description" content="{{ .Site.Params.Description }}" />
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <link rel="stylesheet" href="/css/style.css">
     <script src="https://kit.fontawesome.com/981e77006b.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114973337-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-114973337-1');
+    </script>
+
 
 </head>
 
