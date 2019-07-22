@@ -3,6 +3,10 @@ body {
     letter-spacing: 1px;
 }
 
+a {
+    color: black!important;
+}
+
 img#brand {
     max-width: 30px;
     margin-right: 10px;

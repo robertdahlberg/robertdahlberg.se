@@ -14,29 +14,19 @@
         <div class="card-columns">
             {{ range .Pages }}
             {{ if eq .Type "post" }}
-            <a href="{{ .Permalink }}">
-                <div class="card">
-                    {{if .Params.img }}
-                    <img class="card-img-top" src="{{ .Params.img }}" alt="Card image cap">
-                    {{ end }}
-                    <div class="card-body">
+            <div class="card">
+                {{if .Params.img }}
+                <img class="card-img-top" src="{{ .Params.img }}" alt="Card image cap">
+                {{ end }}
+                <div class="card-body">
+                    <a href="{{ .Permalink }}">
                         <h5 class="card-title">{{ .Title }}</h5>
-                        <p class="card-text">{{ .Description }}</p>
-                        <p class="card-text"><small class="text-muted">{{ .Date.Format "Mon, Jan 2, 2006" }}</small></p>
-                    </div>
+                    </a>
+                    <p class="card-text">{{ .Description }}</p>
+                    <p class="card-text"><small class="text-muted">Av: {{ .Params.Author }}
+                            ,{{ .Date.Format "Monday, 2 Jan, 2006" }}</small>
+                    </p>
                 </div>
-            </a>
-            {{ end }}
-            {{ if eq .Type "quote" }}
-            <div class="card p-3">
-                <blockquote class="blockquote mb-0 card-body">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                    <footer class="blockquote-footer">
-                        <small class="text-muted">
-                            Someone famous in <cite title="Source Title">Source Title</cite>
-                        </small>
-                    </footer>
-                </blockquote>
             </div>
             {{ end }}
             {{ end }}

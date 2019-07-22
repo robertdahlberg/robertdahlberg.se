@@ -6,9 +6,17 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta charset="utf-8">
 
-    <title>Robert Dahlberg, programmerande ishockeydomare</title>
+    <!-- Robots -->
+    <meta name="title" content="{{ .Site.Params.Title }}">
+    <meta name="description" content="{{ .Site.Params.Description }}">
+    <meta name='date' content='{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}'>
+    <meta name='revised' content='{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}'>
+
+    <title>{{ .Site.Params.Title }}</title>
     <meta name="description" content="Portfolio and code by Robert Dahlberg">
-    <meta name="author" content="Robert Dahlberg">
+    <meta name="author" content="{{ .Site.Params.Name }}">
+    <meta name="revised" content="Sunday, July 18th, 2010, 5:15 pm" />
+    <meta name="robots" content="index,follow" />
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">

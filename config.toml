@@ -4,10 +4,12 @@ title = "Robert Dahlberg, programmerande ishockeydomare"
 theme = "penny"
 
 [params]
+Title = "Robert Dahlberg, programmerande ishockeydomare"
+Description = "Programmerande ishockeydomare"
 Picture = "https://res.cloudinary.com/dfvkxoqhn/image/upload/f_auto,q_auto/v1563718128/Roundportrait_rzhfuk.png"
 LogoSmall = "https://res.cloudinary.com/dfvkxoqhn/image/upload/c_scale,f_auto,q_auto,w_100/v1563718128/Roundportrait_rzhfuk.png"
 Name = "Robert Dahlberg"
-Description = "Programmerande ishockeydomare"
+Tagline = "Programmerande ishockeydomare"
 Facebook = "https://www.facebook.com/dahlbergrobert"
 Instagram = "https://www.instagram.com/robertdahlberg/"
 LinkedIn = "https://se.linkedin.com/in/robertdahlberg"
