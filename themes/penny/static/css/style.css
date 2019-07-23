@@ -35,3 +35,11 @@ li.nav-item.icon {
 #front-list li {
     margin-right: 10px;
 }
+
+#footer {
+    margin-top: 10vh;
+    position: relative;
+    bottom: 0;
+    text-align: center;
+    display: block;
+}
