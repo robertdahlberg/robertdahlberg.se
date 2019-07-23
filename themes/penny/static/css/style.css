@@ -1,3 +1,4 @@
+/* Global */
 body {
     font-family: 'Encode Sans Condensed', sans-serif!important;
     letter-spacing: 1px;
@@ -11,6 +12,7 @@ p {
     color: #585858!important;
 }
 
+/* Start */
 img#brand {
     max-width: 30px;
     margin-right: 10px;
@@ -36,6 +38,14 @@ li.nav-item.icon {
     margin-right: 10px;
 }
 
+/* Single */
+#single-title {
+    text-align: center;
+    padding: 10vh;
+    background-color: #f8f9fa;
+}
+
+/* Footer */
 #footer {
     margin-top: 10vh;
     position: relative;
