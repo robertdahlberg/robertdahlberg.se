@@ -24,7 +24,9 @@
                     </a>
                     <p class="card-text">{{ .Description }}</p>
                     <p class="card-text"><small class="text-muted">Av: {{ .Params.Author }}
-                            ,{{ .Date.Format "Monday, 2 Jan, 2006" }}</small>
+                            ,
+                            {{ .Date.Day }}
+                            {{ index $.Site.Data.månader (printf "%d" .Date.Month) }} {{ .Date.Year }}</small>
                     </p>
                 </div>
             </div>
