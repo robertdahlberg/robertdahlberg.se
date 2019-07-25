@@ -5,7 +5,7 @@ theme = "penny"
 
 [params]
 Title = "Robert Dahlberg, programmerande ishockeydomare"
-Description = "Programmerande ishockeydomare"
+Description = "Robert Dahlberg, programmerande ishockeydomare och Systemutvecklare i Örebro. Kunskaper i webbdesign och annan utveckling. Se CV, Portfolio och Personligt brev."
 Picture = "https://res.cloudinary.com/dfvkxoqhn/image/upload/f_auto,q_auto/v1563718128/Roundportrait_rzhfuk.png"
 LogoSmall = "https://res.cloudinary.com/dfvkxoqhn/image/upload/c_scale,f_auto,q_auto,w_100/v1563718128/Roundportrait_rzhfuk.png"
 Name = "Robert Dahlberg"

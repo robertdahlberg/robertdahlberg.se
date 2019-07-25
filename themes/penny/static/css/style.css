@@ -39,7 +39,7 @@ li.nav-item.icon {
 }
 
 /* Single */
-#single-title {
+.jumbotron {
     text-align: center;
     padding: 10vh;
     background-color: #f8f9fa;

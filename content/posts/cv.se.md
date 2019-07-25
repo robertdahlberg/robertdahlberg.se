@@ -1,5 +1,5 @@
 +++
-date = "2017-09-29"
+date = "2019-07-24"
 title = "CV"
 description = "CV för Robert Dahlberg"
 type = "nav"

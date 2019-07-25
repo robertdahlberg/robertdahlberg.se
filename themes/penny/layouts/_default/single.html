@@ -5,12 +5,20 @@
 <section class="container">
   </br>
   <section class="content">
-    <h1 id="single-title">{{ if .Params.heading }} {{ .Params.heading }} {{ else }} {{ .Title }} {{ end }}</h1>
-    <p>{{ .Date.Day }}
-      {{ index $.Site.Data.månader (printf "%d" .Date.Month) }} {{ .Date.Year }}</p>
-    <p>Av:{{ .Params.Author }}</p>
-    {{ $readTime := cond (gt .ReadingTime 1) "minuter" "minut" }}
-    <p>Lästid: {{ .ReadingTime }} {{ $readTime }}</p>
+    <div class="jumbotron">
+      <h1 class="display-4">{{ if .Params.heading }} {{ .Params.heading }} {{ else }} {{ .Title }} {{ end }}</h1>
+      {{if gt (len .Description) 80}}
+      <p class="lead">{{ .Description }}</p>
+      {{ end }}
+      <hr class="my-4">
+      <p>Uppdaterat: {{ .Date.Day }}
+        {{ index $.Site.Data.månader (printf "%d" .Date.Month) }} {{ .Date.Year }}</p>
+      {{ if .Params.Author }}
+      <p>Av:{{ .Params.Author }}</p>
+      {{ end }}
+      {{ $readTime := cond (gt .ReadingTime 1) "minuter" "minut" }}
+      <p>Lästid: {{ .ReadingTime }} {{ $readTime }}</p>
+    </div>
     <div class="entry-content">
       {{ .Content }}
     </div>
