@@ -1,5 +1,19 @@
 {{ partial "head.html" . }}
 
+{{ if eq .Params.Type "other" }}
+<div class="row align-items-center h-100">
+  <div class="col-12 col-md-6 mx-auto">
+    <div class="jumbotron" style="background-color: inherit;">
+      <h1 id="title" style="text-align:center;">{{ .Title }} <i class="far fa-smile"></i></h1>
+      <hr>
+      <p id="description">{{ .Content }}</p>
+      <a href="/"><i class="fas fa-arrow-left"></i> Tillbaka</a>
+    </div>
+  </div>
+</div>
+
+{{ else }}
+
 {{ partial "nav.html" . }}
 
 <section class="container">
@@ -27,3 +41,5 @@
 </section>
 
 {{ partial "footer.html" . }}
+
+{{ end }}

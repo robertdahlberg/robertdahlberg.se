@@ -8,7 +8,7 @@ type = "nav"
 <div class="container h-100">
 <div class="row align-items-center h-100">
         <div class="col-12 col-md-6 mx-auto">
-                <form name="contact" method="POST" data-netlify="true">
+                <form name="contact" method="POST" data-netlify="true" action="/tack/">
                 <label>Namn: <input type="text" name="name" class="form-control" /></label>
                 <label>Email: <input type="email" name="email" class="form-control" /></label>
                 <label>Ämne: <input type="text" name="subject" class="form-control" /></label>
@@ -17,12 +17,4 @@ type = "nav"
                 </form>
         </div>
 </div>
-</div>
-
-<div class="col-10 col-md-3" style="margin:auto;margin-top:5em;margin-bottom:6em;">
-        <i class="far fa-envelope"></i><a href="mailto:r@robertdahlberg.se"> r@robertdahlberg.se</a>
-        <br>
-        <i class="fas fa-phone"></i> 073-834 36 53
-        <br>
-        <i class="fas fa-location-arrow"></i> Vasastrand 3 70354 örebro
 </div>
