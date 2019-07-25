@@ -14,7 +14,7 @@
       <p>Uppdaterat: {{ .Date.Day }}
         {{ index $.Site.Data.månader (printf "%d" .Date.Month) }} {{ .Date.Year }}</p>
       {{ if .Params.Author }}
-      <p>Av:{{ .Params.Author }}</p>
+      <p>Av: {{ .Params.Author }}</p>
       {{ end }}
       {{ $readTime := cond (gt .ReadingTime 1) "minuter" "minut" }}
       <p>Lästid: {{ .ReadingTime }} {{ $readTime }}</p>
