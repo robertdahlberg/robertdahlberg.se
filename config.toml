@@ -2,6 +2,7 @@ baseURL = "http://robertdahlberg.se/"
 languageCode = "se-SE"
 title = "Robert Dahlberg, programmerande ishockeydomare"
 theme = "penny"
+DefaultContentLanguage = "se"
 
 [params]
 Title = "Robert Dahlberg, programmerande ishockeydomare"
