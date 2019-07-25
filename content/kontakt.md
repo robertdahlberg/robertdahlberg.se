@@ -2,7 +2,7 @@
 title = "Kontakt"
 description = "Har du några frågor eller vill ta kontakt? Tveka inte att höra av dig!"
 date = "2017-07-25"
-type = "nav"
+type = "other"
 +++
 
 <div class="container h-100">

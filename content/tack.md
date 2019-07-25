@@ -6,3 +6,5 @@ type = "other"
 +++
 
 Jag återkommer så fort jag kan.
+
+<a href="/"><i class="fas fa-arrow-left"></i> Tillbaka</a>
