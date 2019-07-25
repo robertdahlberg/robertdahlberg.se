@@ -1,10 +1,16 @@
 {{ partial "head.html" . }}
+
 {{ partial "nav.html" . }}
 
 <section class="container">
   </br>
   <section class="content">
     <h1 id="single-title">{{ if .Params.heading }} {{ .Params.heading }} {{ else }} {{ .Title }} {{ end }}</h1>
+    <p>{{ .Date.Day }}
+      {{ index $.Site.Data.månader (printf "%d" .Date.Month) }} {{ .Date.Year }}</p>
+    <p>Av:{{ .Params.Author }}</p>
+    {{ $readTime := cond (gt .ReadingTime 1) "minuter" "minut" }}
+    <p>Lästid: {{ .ReadingTime }} {{ $readTime }}</p>
     <div class="entry-content">
       {{ .Content }}
     </div>

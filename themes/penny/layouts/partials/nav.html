@@ -3,7 +3,11 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       {{ if not .IsHome }}
       <a class="navbar-brand" href="/">
-        <img id="brand" src="{{ .Site.Params.logoSmall }}" alt="{{ .Site.Params.Name }}" />{{ .Site.Params.Name }}</a>
+        <img id="brand" /><i class="fas fa-home"></i></a>
+      {{ end }}
+      {{ if .IsHome }}
+      <a class="navbar-brand" href="/">
+        <img id="brand" /><i class="fas fa-home"></i></a>
       {{ end }}
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -12,17 +16,14 @@
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          {{ range .Data.Pages }} {{ if eq .Type "nav" }}
+          {{range .Site.RegularPages}} {{ if eq .Type "nav" }}
           <li class="nav-item">
             <a class="nav-link" href="{{ .Permalink }}">{{ .Title }}</a>
           </li>
           {{ end }}
           {{ end }}
           <li class="nav-item">
-            <a class="nav-link" href="/posts/">Posts</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/code/">Code</a>
+            <a class="nav-link" href="/posts/">Portfolio</a>
           </li>
         </ul>
         <span class="navbar-text">
