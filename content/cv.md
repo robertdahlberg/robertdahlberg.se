@@ -9,9 +9,9 @@ type = "nav"
 
 ### Ancon
 
-**Systemutvecklare**, *2019 -Pågående*
+**Frontend-utvecklare**, *2019 -Pågående*
 
-Ancon bygger prisbelönta kassasystem för restauranger
+Ancon bygger moderna kassasystem och appar för restauranger och restaurangbesökare. Jobbar med appar både för iOS och android i react-native.
 
 * * *
 ![alt text](https://res.cloudinary.com/dfvkxoqhn/image/upload/c_pad,f_auto,h_150,q_auto,w_150/v1563718126/statnet_aonqxw.png "Studentmedia")
